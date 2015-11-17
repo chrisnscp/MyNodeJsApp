@@ -1,6 +1,6 @@
 ---
 applications:
-- name: rabbitmq-node
+- name: myChat
   memory: 256M
   instances: 1
   host: myChat

@@ -91,7 +91,7 @@ function closeHtml(res) {
 }
 
 function writeMessages(res) {
-  res.write('<h2>Messages</h2>');
+  res.write('<h2>Please enter your message:</h2>');
   res.write('<ol>');
   for (i in messages) {
     res.write('<li>' + messages[i] + '</li>');

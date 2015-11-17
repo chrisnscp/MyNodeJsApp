@@ -1,0 +1,7 @@
+---
+applications:
+- name: rabbitmq-node
+  memory: 256M
+  instances: 1
+  host: rabbitmq-node-${random-word}
+  path: .

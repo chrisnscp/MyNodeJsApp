@@ -85,7 +85,7 @@ conn.on('ready', setup);
 function openHtml(res) {
   res.write("<html><head><title>Node.JS / RabbitMQ demo</title></head><body>");
   res.write('<link rel="stylesheet" type="text/css" href="http://hp.cointet.com/theme.css" />');
-  res.write('<div align="center"><img src="http://hp.cointet.com/HPE.png" /></div>');
+  res.write('<div align="center"><img src="https://lh3.googleusercontent.com/-lMMwfjiWHqk/AAAAAAAAAAI/AAAAAAAAAAA/GYpMLVwTIbk/photo.jpg" /></div>');
   res.write('<div align="center"><h1>My fix is not a fake...</h1></div>');
 }
 

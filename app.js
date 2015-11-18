@@ -84,6 +84,9 @@ conn.on('ready', setup);
 
 function openHtml(res) {
   res.write("<html><head><title>Node.JS / RabbitMQ demo</title></head><body>");
+  res.write('<link rel="stylesheet" type="text/css" href="http://hp.cointet.com/theme.css" />');
+  res.write('<div align="center"><img src="http://hp.cointet.com/HPE.png" /></div>');
+  res.write('<div align="center"><h1>My first Node.JS app :)</h1></div>');
 }
 
 function closeHtml(res) {
@@ -91,7 +94,7 @@ function closeHtml(res) {
 }
 
 function writeMessages(res) {
-  res.write('<h2>Please enter your message:</h2>');
+  res.write('<h2>Messages:</h2>');
   res.write('<ol>');
   for (i in messages) {
     res.write('<li>' + messages[i] + '</li>');

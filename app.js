@@ -86,7 +86,7 @@ function openHtml(res) {
   res.write("<html><head><title>Node.JS / RabbitMQ demo</title></head><body>");
   res.write('<link rel="stylesheet" type="text/css" href="http://hp.cointet.com/theme.css" />');
   res.write('<div align="center"><img src="http://hp.cointet.com/HPE.png" /></div>');
-  res.write('<div align="center"><h1>My fix is not a fake...</h1></div>');
+  res.write('<div align="center"><h1>- My Chat -</h1></div>');
 }
 
 function closeHtml(res) {

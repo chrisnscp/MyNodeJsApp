@@ -83,7 +83,7 @@ conn.on('ready', setup);
 // ---- helpers
 
 function openHtml(res) {
-  res.write("<html><head><title>Node.JS / RabbitMQ demo number 2</title></head><body>");
+  res.write("<html><head><title>Node.JS / RabbitMQ demo number 3</title></head><body>");
   res.write('<link rel="stylesheet" type="text/css" href="http://hp.cointet.com/theme.css" />');
   res.write('<div align="center"><img src="http://hp.cointet.com/HPE.png" /></div>');
   res.write('<div align="center"><h1>- My Chat -</h1></div>');

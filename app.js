@@ -84,30 +84,31 @@ conn.on('ready', setup);
 // ---- helpers
 
 function openHtml(res) {
-
+/*
 fs.readFile('./index1.html', function (err, html) {
     if (err) {
         throw err; 
     }       
        res.write(html);
 });
-
- // res.write("<html><head><title>Node.JS / RabbitMQ demo number 3</title></head><body>");
-  r//es.write('<link rel="stylesheet" type="text/css" href="http://hp.cointet.com/theme.css" />');
+*/
+  res.write("<html><head><title>Node.JS / RabbitMQ demo number 3</title></head><body>");
+  res.write('<link rel="stylesheet" type="text/css" href="http://hp.cointet.com/theme.css" />');
 res.write('<div align="center"><img src="http://hp.cointet.com/HPE.png" /></div>');
 // res.write('<div align="center"><img src="http://hp.cointet.com/HPE.png" /></div>');
   res.write('<div align="center"><h1>- My HPE Chat -</h1></div>');
 }
 
 function closeHtml(res) {
-
+    /*
     fs.readFile('./index2.html', function (err, html) {
         if (err) {
             throw err;
         }
         res.write(html);
     });
- // res.end("</body></html>");
+    */
+  res.end("</body></html>");
 }
 
 function writeMessages(res) {

@@ -89,18 +89,25 @@ fs.readFile('./index1.html', function (err, html) {
     if (err) {
         throw err; 
     }       
-       response.write(html);
+       res.write(html);
 });
 
-  res.write("<html><head><title>Node.JS / RabbitMQ demo number 3</title></head><body>");
-  res.write('<link rel="stylesheet" type="text/css" href="http://hp.cointet.com/theme.css" />');
+ // res.write("<html><head><title>Node.JS / RabbitMQ demo number 3</title></head><body>");
+  r//es.write('<link rel="stylesheet" type="text/css" href="http://hp.cointet.com/theme.css" />');
 res.write('<div align="center"><img src="http://hp.cointet.com/HPE.png" /></div>');
 // res.write('<div align="center"><img src="http://hp.cointet.com/HPE.png" /></div>');
   res.write('<div align="center"><h1>- My HPE Chat -</h1></div>');
 }
 
 function closeHtml(res) {
-  res.end("</body></html>");
+
+    fs.readFile('./index2.html', function (err, html) {
+        if (err) {
+            throw err;
+        }
+        res.write(html);
+    });
+ // res.end("</body></html>");
 }
 
 function writeMessages(res) {
@@ -117,12 +124,7 @@ function writeForm(res) {
   res.write('<input name="data"/><input type="submit"/>');
   res.write('</form>');
 
-  fs.readFile('./index2.html', function (err, html) {
-      if (err) {
-          throw err;
-      }
-      response.write(html);
-  });
+  
 }
 
 function printEnv(res) {

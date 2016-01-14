@@ -1,8 +1,7 @@
 ---
 applications:
 - name: myChat
-  memory: 32M
+  memory: 256M
   instances: 1
+  host: myChat
   path: .
-
-

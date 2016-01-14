@@ -1,7 +1,7 @@
 {
   "name":"rabbitmq-node",
-  "author": "Etienne Cointet",
-  "version":"0.0.1",
+  "author": "Michael Bridgen",
+  "version":"0.0.2",
   "dependencies":{
     "amqp":">= 0.1.0",
     "sanitizer": "*"

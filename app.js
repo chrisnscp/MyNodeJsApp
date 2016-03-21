@@ -70,7 +70,7 @@ function httpServer(exchange) {
     }
     else {
       res.statusCode = 404;
-      res.end("This is not the page you were looking for.");
+      res.end("This is not you were looking for.");
     }
   });
   serv.listen(port);

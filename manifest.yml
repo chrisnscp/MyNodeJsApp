@@ -1,7 +1,7 @@
 ---
 applications:
-- name: myChat
+- name: MyNodeJsApp
   memory: 256M
   instances: 1
-  host: myChat
+  host: MyNodeJsApp
   path: .
